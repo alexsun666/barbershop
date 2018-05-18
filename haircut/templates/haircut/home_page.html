@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazing Alex’s Barbershop</title>
+</head>
+<body>
+<h1>Amazing Alex’s Barbershop</h1>
+<h2>A Fresh Cut You And Your Family!</h2>
+<br>
+<br>
+<h3>You may choose your own Hair Stylist</h3>
+<img src="https://tse2-mm.cn.bing.net/th?id=OIP.goAoxFgyaKQmJGzOuBJM8QAAAA&pid=Api">
+<br>
+Chirs: Specializes in classical hair style.
+<br>
+<img src="https://www.howtobecomeahairdresser.com.au/wp-content/uploads/2015/12/Teaching-Training-Hairdressers-1024x569.jpg">
+<br>
+Nancy and Shary:Specializes in new fashion haircuts.
+<br>
+<img src="http://tse4.mm.bing.net/th?id=OIP.lBWP7bXAAQPLjkHQEqVz2gHaE9&pid=Api">
+<br>
+Krean:Specializes in babies' haircuts
+<br>
+<h1>Make Your Appointment</h1>
+	<form method="POST" action="{% url 'haircut:home_page' %}">
+		{% csrf_token %}
+		<input placeholder="Type your times" type="text" name="time">
+		<input type="submit" name="">
+	</form>
+	</div>	
+	<h1>Here Is Your Appointment</h1>
+	<p>Appointment Time: {{time}}</p>
+
+</body>
+</html>
